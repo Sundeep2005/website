@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KitKings — Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900|Russo+One:400,500,600,700,800,900&amp;subset=latin">
+    <link href="https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135002,135000" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section class="pt-6 pb-20 bg-gray-50 overflow-hidden" x-data="{ mobileNavOpen: false }">
+        <div class="container mx-auto px-4">
+          <div class="mb-6">
+            <div class="flex items-center justify-between px-6 py-3.5 bg-white border border-gray-100 rounded-full">
+              <div class="w-auto">
+                <div class="flex flex-wrap items-center">
+                  <div class="w-auto">
+                    <a href="#">
+                      <img src="images/17212649-20230424-161130573730-profilelogo-png-1766882305373-webp-1766882362265.webp" alt="KitKings Logo">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-auto">
+                <div class="flex flex-wrap items-center">
+                  <div class="w-auto hidden lg:block">
+                    <ul class="flex items-center justify-center">
+                      <li class="mr-9"><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">Shop</a></li>
+                      <li class="mr-9"><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">Clubs</a></li>
+                      <li class="mr-9"><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">Over ons</a></li>
+                      <li><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="w-auto">
+                <div class="flex flex-wrap items-center">
+                  <div class="w-auto hidden lg:block">
+                    <div class="flex flex-wrap -m-2">
+                      <div class="w-full md:w-auto p-2"><a class="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-200 border rounded-full" href="#">Mijn Account</a></div>
+                      <div class="w-full md:w-auto p-2"><a class="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full" href="#">Winkelwagen</a></div>
+                    </div>
+                  </div>
+                  <div class="w-auto lg:hidden">
+                    <button x-on:click="mobileNavOpen = !mobileNavOpen" class="inline-block">
+                      <svg class="text-blue-500" width="45" height="45" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                        <path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
+              <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-gray-800 opacity-80"></div>
+              <nav class="relative z-10 px-9 pt-8 bg-white h-full overflow-y-auto">
+                <div class="flex flex-wrap justify-between h-full">
+                  <div class="w-full">
+                    <div class="flex items-center justify-between -m-2">
+                      <div class="w-auto p-2">
+                        <a class="inline-block" href="#">
+                          <img src="images/logos/logo-3a7c66c5df253837de5b9a844e8e3ada.png" alt="KitKings Logo">
+                        </a>
+                      </div>
+                      <div class="w-auto p-2">
+                        <button x-on:click="mobileNavOpen = !mobileNavOpen" class="inline-block">
+                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col justify-center py-8 w-full">
+                    <ul>
+                      <li class="mb-9"><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">Shop</a></li>
+                      <li class="mb-9"><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">Clubs</a></li>
+                      <li class="mb-9"><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">National Teams</a></li>
+                      <li><a class="inline-block text-sm font-bold text-gray-900 hover:text-gray-700" href="#">Retro</a></li>
+                    </ul>
+                  </div>
+                  <div class="flex flex-col justify-end w-full pb-8">
+                    <div class="flex flex-wrap -m-2">
+                      <div class="w-full p-2"><a class="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-200 border rounded-full" href="#">My Account</a></div>
+                      <div class="w-full p-2"><a class="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full" href="#">Cart (0)</a></div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center -m-4">
+            <div class="w-full md:w-1/3 p-4">
+              <img class="w-full object-cover rounded-3xl" style="height: 640px;" src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&amp;q=80" alt="Soccer Jersey">
+            </div>
+            <div class="w-full md:flex-1 p-4">
+              <div class="flex flex-col justify-center items-center p-8 h-full text-center bg-white rounded-3xl">
+                <div class="max-w-lg">
+                  <span class="inline-block mb-3 text-sm text-blue-500 font-bold uppercase tracking-widest">PREMIUM VOETBALSHIRTS</span>
+                  <h1 class="font-heading mb-6 text-5xl text-gray-900 font-black tracking-tight">
+                    <span>Wear Your </span>
+                    <span class="text-blue-500">Passion</span>
+                    <span> On The Pitch</span>
+                  </h1>
+                  <p class="mb-8 text-xl font-bold">Ontdek authentieke shirts van de beste clubs en nationale teams ter wereld. Premium kwaliteit, snelle verzending en onverslaanbare prijzen voor al je favoriete tenues.</p>
+                  <div class="flex flex-wrap justify-center -m-2">
+                    <div class="w-full md:w-auto p-2"><a class="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full" href="#">Shop Now</a></div>
+                    <div class="w-full md:w-auto p-2"><a class="block w-full px-4 py-2.5 text-sm text-center text-gray-900 font-bold bg-gray-50 hover:bg-gray-200 focus:ring-4 focus:ring-gray-200 rounded-full" href="#">New Arrivals</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="py-10 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="py-16 px-8 md:px-16 bg-gray-100 border border-gray-100 rounded-3xl">
+            <div class="flex flex-wrap -m-8">
+              <div class="w-full md:w-1/2 p-8">
+                <img class="mx-auto md:ml-0 rounded-3xl" src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&amp;q=80" alt="Soccer Jerseys Collection">
+              </div>
+              <div class="w-full md:w-1/2 p-8">
+                <div class="md:max-w-md">
+                  <span class="inline-block mb-5 text-sm text-blue-500 font-bold uppercase tracking-widest">Why Choose Us</span>
+                  <h2 class="font-heading mb-4 text-4xl text-gray-900 font-black tracking-tight">
+                    <span>The Ultimate Kit </span>
+                    <span class="text-blue-500">Experience</span>
+                  </h2>
+                  <p class="mb-16 font-bold">From La Liga to the Premier League, Serie A to the World Cup — we've got every jersey you're looking for.</p>
+                  <div class="flex flex-wrap -m-2">
+                    <div class="w-auto p-2">
+                      <div class="flex flex-wrap px-3 py-2 bg-white rounded-full">
+                        <div class="w-auto mr-2 pt-1">
+                          <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z" fill="#3B82F6"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-1">
+                          <p class="text-sm text-gray-900 font-bold">100% Authentic</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-auto p-2">
+                      <div class="flex flex-wrap px-3 py-2 bg-white rounded-full">
+                        <div class="w-auto mr-2 pt-1">
+                          <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z" fill="#3B82F6"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-1">
+                          <p class="text-sm text-gray-900 font-bold">Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-auto p-2">
+                      <div class="flex flex-wrap px-3 py-2 bg-white rounded-full">
+                        <div class="w-auto mr-2 pt-1">
+                          <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z" fill="#3B82F6"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-1">
+                          <p class="text-sm text-gray-900 font-bold">Easy Returns</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-auto p-2">
+                      <div class="flex flex-wrap px-3 py-2 bg-white rounded-full">
+                        <div class="w-auto mr-2 pt-1">
+                          <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z" fill="#3B82F6"></path>
+                          </svg>
+                        </div>
+                        <div class="flex-1">
+                          <p class="text-sm text-gray-900 font-bold">Custom Names</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="py-10 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="px-10 pt-10 pb-6 bg-gray-100 border border-gray-100 rounded-3xl">
+            <div class="flex flex-wrap items-center justify-between mb-10 -m-4">
+              <div class="w-full md:w-1/2 p-4">
+                <a class="inline-block" href="#">
+                  <img src="images/17212649-20230424-161130573730-profilelogo-png-1766882305373-webp-1766882542203.webp" alt="KitKings Logo">
+                </a>
+              </div>
+              <div class="w-full md:w-1/2 p-4">
+                <div class="md:max-w-md ml-auto">
+                  <div class="flex flex-wrap items-center -m-2">
+                    <div class="w-full md:flex-1 p-1.5">
+                      <input class="px-4 py-2.5 w-full text-sm text-gray-500 font-bold bg-white outline-none focus:ring-4 focus:ring-blue-200 placeholder-gray-500 border border-gray-200 rounded-full" type="text" placeholder="Your email address">
+                    </div>
+                    <div class="w-full md:w-auto p-1.5">
+                      <div class="flex flex-wrap justify-center -m-2">
+                        <div class="w-full md:w-auto p-2"><a class="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full" href="#">Subscribe</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-10 mb-6 bg-white rounded-3xl">
+              <div class="flex flex-wrap justify-between -m-4">
+                <div class="w-auto p-4">
+                  <h3 class="font-heading mb-7 text-gray-900 font-bold">Shop</h3>
+                  <ul>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">All Jerseys</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Club Kits</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">National Teams</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Retro Classics</a></li>
+                    <li><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Sale</a></li>
+                  </ul>
+                </div>
+                <div class="w-auto p-4">
+                  <h3 class="font-heading mb-7 text-gray-900 font-bold">Top Leagues</h3>
+                  <ul>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Premier League</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">La Liga</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Serie A</a></li>
+                    <li><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Bundesliga</a></li>
+                  </ul>
+                </div>
+                <div class="w-auto p-4">
+                  <h3 class="font-heading mb-7 text-gray-900 font-bold">Support</h3>
+                  <ul>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Contact Us</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Size Guide</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Shipping Info</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Returns</a></li>
+                    <li><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="w-auto p-4">
+                  <h3 class="font-heading mb-7 text-gray-900 font-bold">Legal</h3>
+                  <ul>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Privacy Policy</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Terms of Service</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Cookie Policy</a></li>
+                    <li><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#">Authenticity</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-center items-center -m-1">
+              <div class="w-auto p-1">
+                <p class="text-gray-500 text-center font-medium">© Copyright 2025. Alle rechten voorbehouden (bedrijfsnaam)</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="js/global-13807.js?v=1766882651"></script>
+</body>
+</html>
+
